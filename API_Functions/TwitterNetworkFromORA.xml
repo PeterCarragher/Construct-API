@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<DynamicMetaNetwork id="Extracted Meta-Network - Copy">
+  <MetaNetwork id="Extracted Meta-Network - Copy">
+    <propertyIdentities>
+      <propertyIdentity id="firstTweetDate" type="date" singleValued="true"/>
+      <propertyIdentity id="Image Folder" type="text" singleValued="true"/>
+      <propertyIdentity id="importFile" type="text" singleValued="true"/>
+      <propertyIdentity id="importFileFormat" type="text" singleValued="true"/>
+      <propertyIdentity id="importFirstTweetDate" type="date" singleValued="true"/>
+      <propertyIdentity id="importLastTweetDate" type="date" singleValued="true"/>
+      <propertyIdentity id="lastTweetDate" type="date" singleValued="true"/>
+      <propertyIdentity id="Node Title Property" type="categoryText" singleValued="true"/>
+    </propertyIdentities>
+    <properties>
+      <property id="Image Folder" value="Extracted Meta-Network - Copy images"/>
+    </properties>
+    <nodes>
+      <nodeset type="Agent" id="Agent">
+        <property id="Node Title Property" value="Node Label"/>
+        <propertyIdentities>
+          <propertyIdentity id="IS_NEWS_AGENCY" type="categoryNumber" singleValued="true"/>
+          <propertyIdentity id="IS_VERIFIED" type="categoryNumber" singleValued="true"/>
+          <propertyIdentity id="Language" type="categoryText" singleValued="false"/>
+          <propertyIdentity id="LOCATION" type="categoryText" singleValued="true"/>
+          <propertyIdentity id="Node Label" type="text" singleValued="true"/>
+          <propertyIdentity id="NUMBER_FOLLOWERS" type="number" singleValued="true"/>
+          <propertyIdentity id="stance" type="number" singleValued="true"/>
+          <propertyIdentity id="TWEET_COUNT" type="number" singleValued="true"/>
+        </propertyIdentities>
+        <node id="270878421">
+          <property id="Language" value="en"/>
+          <property id="Node Label" value="bubblylaily"/>
+          <property id="NUMBER_FOLLOWERS" value="423"/>
+          <property id="stance" value="0.3"/>
+          <property id="TWEET_COUNT" value="16"/>
+        </node>
+        <node id="359357022">
+          <property id="Language" value="en"/>
+          <property id="Language" value="nl"/>
+          <property id="LOCATION" value="Singapore"/>
+          <property id="Node Label" value="rebound9"/>
+          <property id="NUMBER_FOLLOWERS" value="209"/>
+          <property id="stance" value="0.5"/>
+          <property id="TWEET_COUNT" value="9"/>
+        </node>
+        <node id="15241779">
+          <property id="Language" value="en"/>
+          <property id="Language" value="zh"/>
+          <property id="LOCATION" value="Earth"/>
+          <property id="Node Label" value="jxtpse"/>
+          <property id="NUMBER_FOLLOWERS" value="289"/>
+          <property id="stance" value="0.2"/>
+          <property id="TWEET_COUNT" value="22"/>
+        </node>
+        <node id="2268576145">
+          <property id="Language" value="en"/>
+          <property id="Language" value="tl"/>
+          <property id="Language" value="in"/>
+          <property id="Node Label" value="allsgstuff"/>
+          <property id="NUMBER_FOLLOWERS" value="8234"/>
+          <property id="stance" value="0.1"/>
+          <property id="TWEET_COUNT" value="118"/>
+        </node>
+        <node id="82807134">
+          <property id="Language" value="en"/>
+          <property id="Language" value="ht"/>
+          <property id="Language" value="zh"/>
+          <property id="Language" value="und"/>
+          <property id="Language" value="pl"/>
+          <property id="Language" value="pt"/>
+          <property id="Language" value="it"/>
+          <property id="Language" value="hi"/>
+          <property id="Language" value="tl"/>
+          <property id="Language" value="in"/>
+          <property id="Language" value="fr"/>
+          <property id="LOCATION" value="Singapore"/>
+          <property id="Node Label" value="tanhuiyi"/>
+          <property id="NUMBER_FOLLOWERS" value="1132"/>
+          <property id="stance" value="0.8"/>
+          <property id="TWEET_COUNT" value="480"/>
+        </node>
+      </nodeset>
+    </nodes>
+    <networks>
+      <network sourceType="Agent" source="Agent" targetType="Agent" target="Agent" id="Agent x Agent - All Communication" isDirected="true" allowSelfLoops="true" isBinary="false" dynetmlUndirectedCompressed="false">
+        <link source="359357022" target="270878421" value="0.6"/>
+        <link source="359357022" target="2268576145" value="0.5"/>
+        <link source="15241779" target="82807134" value="0.7"/>
+        <link source="2268576145" target="270878421" value="0.8"/>
+        <link source="2268576145" target="359357022" value="0.2"/>
+        <link source="82807134" target="15241779" value="0.04"/>
+        <link source="82807134" target="2268576145" value="0.54"/>
+      </network>
+    </networks>
+  </MetaNetwork>
+</DynamicMetaNetwork>
