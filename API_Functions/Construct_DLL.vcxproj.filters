@@ -78,15 +78,6 @@
     <ClInclude Include="..\include\Construct_Models\Emotions.h">
       <Filter>Models</Filter>
     </ClInclude>
-    <ClInclude Include="StanceModel.h">
-      <Filter>Models</Filter>
-    </ClInclude>
-    <ClInclude Include="StanceModelDefinitions.h">
-      <Filter>Models</Filter>
-    </ClInclude>
-    <ClInclude Include="StanceCSV.h">
-      <Filter>Models</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -99,9 +90,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\include\Construct_Models\Template.cpp">
-      <Filter>Models</Filter>
-    </ClCompile>
-    <ClCompile Include="StanceModel.cpp">
       <Filter>Models</Filter>
     </ClCompile>
   </ItemGroup>

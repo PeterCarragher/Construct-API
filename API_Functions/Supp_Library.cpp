@@ -13,9 +13,7 @@
 #include "KnowledgeTrust.h"
 #include "Emotions.h"
 
-#include "StanceModelDefinitions.h"
-#include "StanceModel.h"
-#include "StanceCSV.h"
+
 
 //only edit the contents of each function and include any extra files needed
 
@@ -32,10 +30,6 @@ namespace dynet {
 
 		if (model_name == "Template Model")
 			return new Template(parameters, construct);
-
-		if (model_name == MODEL_STANCE) 
-			return new StanceModel(parameters, construct);
-
 
 		//************************************
 		//*    add your custom model here    *
@@ -122,7 +116,6 @@ namespace dynet {
 		//*************************************
 		//*    add your custom output here    *
 		//*************************************
-		return new StanceCSV(*construct);
 
 		return NULL;
 	}
